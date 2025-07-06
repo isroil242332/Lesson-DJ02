@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}О нас{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h1>О нашей компании</h1>
+        <p class="lead">Мы работаем на рынке более 10 лет.</p>
+        
+        <div class="mt-4">
+            <h3>Наша история</h3>
+            <p>Компания была основана в 2010 году с целью предоставления качественных услуг.</p>
+            <p>За время работы мы реализовали более 1000 проектов.</p>
+        </div>
+        
+        <div class="mt-4">
+            <h3>Наша команда</h3>
+            <p>В нашей компании работают высококвалифицированные специалисты.</p>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Наши преимущества</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Опыт более 10 лет</li>
+                    <li class="list-group-item">Квалифицированные специалисты</li>
+                    <li class="list-group-item">Гарантия качества</li>
+                    <li class="list-group-item">Индивидуальный подход</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

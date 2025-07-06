@@ -1,0 +1,30 @@
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>О компании</h5>
+                <p>Мы предлагаем лучшие решения для вашего бизнеса.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Ссылки</h5>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'home' %}" class="text-white">Главная</a></li>
+                    <li><a href="{% url 'about' %}" class="text-white">О нас</a></li>
+                    <li><a href="{% url 'services' %}" class="text-white">Услуги</a></li>
+                    <li><a href="{% url 'contact' %}" class="text-white">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Контакты</h5>
+                <address>
+                    <p>г. Москва, ул. Примерная, 123</p>
+                    <p>Телефон: +7 (123) 456-78-90</p>
+                    <p>Email: info@example.com</p>
+                </address>
+            </div>
+        </div>
+        <div class="text-center pt-3 border-top">
+            <p>&copy; 2023 Мой сайт. Все права защищены.</p>
+        </div>
+    </div>
+</footer>

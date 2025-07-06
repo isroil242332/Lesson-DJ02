@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Добро пожаловать!</h1>
+    <p class="lead">Это главная страница нашего сайта.</p>
+    <hr class="my-4">
+    <p>Используйте меню для навигации по сайту.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'about' %}" role="button">Узнать больше</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Наши услуги</h5>
+                <p class="card-text">Широкий спектр услуг для вашего бизнеса.</p>
+                <a href="{% url 'services' %}" class="btn btn-primary">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">О компании</h5>
+                <p class="card-text">Узнайте больше о нашей компании.</p>
+                <a href="{% url 'about' %}" class="btn btn-primary">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Контакты</h5>
+                <p class="card-text">Свяжитесь с нами удобным для вас способом.</p>
+                <a href="{% url 'contact' %}" class="btn btn-primary">Контакты</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
